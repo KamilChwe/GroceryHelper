@@ -28,6 +28,19 @@ app.post('/ping', (req, res) => {
     res.json({response: 'Button Clicked Successfully'});
 });
 
+app.post('/add', (req, res) => {
+    console.log("Add", req.body);
+    res.json({respose: 'Items Added!'});
+});
+
+app.post('/del', (req, res) => {
+    res.json({respose: 'Items Removed!'});
+});
+
+app.post('/stats', (req, res) => {
+    res.json({respose: 'Statistics Shown!'});
+});
+
 // Start the server
 app.listen(port, () => {
     console.log(`Server listening on http://localhost:${port}`);

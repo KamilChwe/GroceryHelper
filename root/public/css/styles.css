@@ -1,11 +1,53 @@
 /* Global Styling */
 body{
     margin: 0;
-    background-color: #EEFDEF;
-}
-
-div{
     background-color: #F6EDD9;
 }
 
-/* Click dropdown Nav Styling */
+/* Nav Div Styling */
+#nav {
+    margin-top: 10px;
+    padding: 5px;
+    float: left;
+    width: 40px;
+    height: 240px;
+    background-color: #729A78;
+}
+
+#nav button{
+    position: absolute;
+    left: -60px;
+    transition: 0.3s;
+    padding: 12px;
+    width: 100px;
+    height: 75px;
+    text-decoration: none;
+    border-radius: 0 5px 5px 0;
+    border: none;
+}
+
+#nav button:hover{
+    left: 0;
+}
+
+#add {
+    top: 20px;
+}
+#del {
+    top: 100px;
+}
+#stats {
+    top: 180px;
+}
+
+/* Main Div Styling */
+#main {
+    padding: 12px;
+    margin-left: 50px;
+}
+
+/* Footer Div Styling */
+#footer {
+    bottom: 0;
+    position: fixed;
+}
