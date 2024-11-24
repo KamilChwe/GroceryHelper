@@ -1,0 +1,17 @@
+{
+  "name": "groceryhelper",
+  "version": "0.0.1",
+  "description": "A Dynamic Smart Shopping List",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kamil Chwedura",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "groceryhelper": "file:"
+  }
+}
