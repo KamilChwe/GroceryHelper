@@ -1,3 +1,9 @@
+/* Colours
+    Background: #F6EDD9
+    Outer Div: #729A78
+    Inner Div: #2F964E
+*/
+
 /* Global Styling */
 body{
     margin: 0;
@@ -6,12 +12,12 @@ body{
 
 /* Nav Div Styling */
 #nav {
-    margin-top: 10px;
     padding: 5px;
     float: left;
     width: 40px;
     height: 240px;
     background-color: #729A78;
+    border-radius: 0 5px 5px 0;
 }
 
 #nav button{
@@ -42,8 +48,21 @@ body{
 
 /* Main Div Styling */
 #main {
+    background-color: #729A78;
+    border-radius: 5px 5px 5px 5px;
     padding: 12px;
-    margin-left: 50px;
+    margin-left: 65px;
+    margin-right: 25px;
+    margin-top: 10px;
+    height: auto;
+}
+
+/* Main Div Content Styling */
+#itemDiv {
+    border-radius: 5px 5px 5px 5px;
+    padding: 6px;
+    margin: 6px;
+    background-color: #2F964E;
 }
 
 /* Footer Div Styling */
