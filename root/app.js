@@ -3,10 +3,14 @@
 // Using this app as a learning experience primarily
 
 const express = require('express');
+const { exec } = require('child_process');
 const bodyParser = require('body-parser');
+const { stdout } = require('process');
 
 const app = express();
 const port = 8080;
+
+app.use(express.json());
 
 // BodyParser, required to read HTML content
 app.use(bodyParser.urlencoded({extended: true}));
@@ -39,6 +43,17 @@ app.post('/del', (req, res) => {
 
 app.post('/stats', (req, res) => {
     res.json({respose: 'Statistics Shown!'});
+});
+
+app.post('/update', (req, res) => {
+    console.log('New version detected, updating app!');
+    exec('../../AppStart.sh', (error, stdout, stderr) => {
+        if (error){
+            return res.status(500).send('Deployment failed');
+        }
+        console.log(stdout);
+        res.status(200).send("Deployment Successful!");
+    });
 });
 
 // Start the server
